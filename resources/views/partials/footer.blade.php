@@ -93,6 +93,20 @@
             </div>
             <div class="right-section"></div>
         </div>
-        <div class="ms_bottom-section"></div>
+        <div class="ms_bottom-section">
+            <div class="ms-container">
+                <div class="button-section">
+                    <button class="sign-up">SIGN-UP NOW</button>
+                </div>
+                <div class="socials-section">
+                    <h3>FOLLOW US</h3>
+                    <img src="../images/footer-facebook.png" alt="facebook">
+                    <img src="../images/footer-twitter.png" alt="twitter">
+                    <img src="../images/footer-youtube.png" alt="youtube">
+                    <img src="../images/footer-pinterest.png" alt="pinterest">
+                    <img src="../images/footer-periscope.png" alt="periscope">
+                </div>
+            </div>
+        </div>
     </div>
 </footer>

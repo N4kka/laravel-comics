@@ -135,6 +135,34 @@ footer {
 }
 
 .ms_bottom-section {
-    height: 150px;
-    background-color: red;
+    height: 80px;
+    background-color: #303030;
+}
+
+.button-section {
+    width: 50%;
+}
+
+.sign-up {
+    padding: 10px 20px;
+    border: 2px solid #0282f9;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background: #303030;
+}
+
+.socials-section {
+    width: 50%;
+    display: flex;
+}
+
+.socials-section h3 {
+    color: #0282f9;
+    margin-right: 3rem;
+}
+
+.socials-section img {
+    width: 5%;
+    margin-right: 20px;
 }
