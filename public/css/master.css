@@ -20,6 +20,53 @@
 /* SECTION */
 .comics {
     width: 100%;
-    height: 450px;
+    height: 500px;
     background-color: #1c1c1c;
+}
+
+.comics-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comics-card {
+    width: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comics-card img {
+    width: 125px;
+    height: 125px;
+}
+
+.comics-card p {
+    margin: 10px;
+}
+
+.loading {
+    padding: 10px 20px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background: #0282f9;
+    position: absolute;
+    bottom: 90px;
+    left: 700px;
+}
+
+/* Second Section */
+.info {
+    width: 100%;
+    height: 120px;
+    background-color: #0282f9;
+}
+
+/* FOOTER */
+footer {
+    height: 600px;
+    background-color: black;
 }

@@ -10,6 +10,7 @@
     padding-right: 8rem;
     display: flex;
     justify-content: end;
+    align-items: center;
     background-color: #0282f9;
 }
 
