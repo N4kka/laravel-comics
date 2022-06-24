@@ -5,7 +5,7 @@
     </div>
     <div class="bottom-section">
         <div class="ms-container">
-            <div class="left-section">
+            <div class="ms_left-section">
                 <img src="../images/dc-logo.png" alt="DC logo">
             </div>
             <div class="center-section">
@@ -42,7 +42,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="right-section">
+            <div class="ms_right-section">
                 <input type="text" name="Search" placeholder="Search" id="">
             </div>
         </div>

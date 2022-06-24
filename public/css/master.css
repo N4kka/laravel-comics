@@ -88,6 +88,53 @@
 }
 /* FOOTER */
 footer {
-    height: 600px;
-    background-color: black;
+    height: 300px;
+}
+
+.ms_upper-section {
+    height: 400px;
+    background-image: url('../images/footer-bg.jpg');
+}
+
+.left-section{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-list {
+    width: calc(100% / 3);
+}
+
+.footer-list h4 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-list a {
+    color: gray;
+}
+
+.rights {
+    margin-top: 25px;
+    color: gray;
+    font-size: 13px;
+    text-transform: none;
+}
+
+.rights span {
+    color: #0282f9;
+}
+
+.right-section {
+    width: 50%;
+    height: 100%;
+    background-image: url('../images/dc-logo-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ms_bottom-section {
+    height: 150px;
+    background-color: red;
 }
