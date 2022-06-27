@@ -1,8 +1,12 @@
 <section class="comics">
     <div class="ms-container">
         <div class="comics-list">
-            @foreach ($comic_card as $item)
-                @include('components.section_card', $item)
+            @foreach ($comics as $comic)
+                @include('components.section_card', [
+                    'id' => $comic['id'],
+                    'image' => $comic['thumb'],
+                    'title' => $comic['series']
+                ])
             @endforeach
         </div>
     </div>

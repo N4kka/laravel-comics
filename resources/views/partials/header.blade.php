@@ -14,7 +14,7 @@
                         <a href="">character</a>
                     </li>
                     <li>
-                        <a href="">comics</a>
+                        <a href="{{ route('comic_page') }}">comics</a>
                     </li>
                     <li>
                         <a href="">movies</a>
@@ -48,3 +48,8 @@
         </div>
     </div>
 </header>
+
+{{-- TO BE ADDED FOR DYNAMIC CLASS AND VOICE LIST --}}
+{{-- <li class="{{ Request::route()->getName() === $list_item['name'] ? 'active' : '' }}">
+    <a href="{{ route($list_item['name']) }}">{{ $list_item['title'] }}</a> --}}
+{{-- </li> --}}

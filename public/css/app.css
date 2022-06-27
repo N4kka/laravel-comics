@@ -170,6 +170,76 @@ p {
   width: 20%;
 }
 
+.page {
+  width: 100%;
+  height: 600px;
+  background-color: pink;
+}
+
+.upper {
+  width: 100%;
+  height: 70px;
+  background-color: #0282f9;
+}
+.upper img {
+  width: 10%;
+  position: absolute;
+  top: 180px;
+  left: 350px;
+}
+
+.main-section {
+  height: 400px;
+  background-color: #fff;
+}
+.main-section .container {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-section h1 {
+  color: #043f5e;
+  text-transform: uppercase;
+}
+.main-section .available {
+  display: flex;
+}
+.main-section .price {
+  width: 400px;
+  height: 40px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #55ba59;
+}
+.main-section .price span {
+  color: lightgray;
+}
+.main-section .price .dollar-price {
+  color: white;
+}
+.main-section .price .availability {
+  padding-right: 20px;
+  color: lightgray;
+}
+.main-section .check {
+  width: 250px;
+  height: 40px;
+  padding-left: 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #55ba59;
+}
+
 /* FOOTER */
 footer {
   height: 300px;

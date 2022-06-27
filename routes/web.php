@@ -13,22 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// $nav_list = [
-    // [   IMPORTANT
-    // CREARE UN FILE NELLA CARTELLA CONFIG "LIST.PHP" E COLLEGARLO QUI
-        // "inserire le voci dell'header, dopodiché passarle al data con 'nav_voices' => $nav_list e per le altre rotte fare use ($nav_list)"
-    // ]
-// ];
+$list = config('list');
+$comics = config('comics');
 
-Route::get('/', function () {
-    $comics_array = config('comics');
+$data = [
+    'comics' => $comics,
+    'list' => $list
+];
 
-    $data = [
-        'comic_card' => $comics_array,
-    ];
+Route::get('/', function () use ($data) {
     return view('home_page', $data);
 })->name('home_page');
 
-Route::get('/single_page', function() {
-    return view('single_page');
-})->name('single_page');
+Route::get('/comic_page/{id}', function ($id) use ($data) {
+    $comic = collect(config('comics'));
+    $current_comic = $comic->where('id', $id)->first();
+
+    if (!$current_comic) {
+        return abort(404);
+    }
+
+    $data = array_merge($data, [
+        'comics' => $current_comic
+    ]);
+
+    return view('comic_page', $data);
+})->name('comic_page');
