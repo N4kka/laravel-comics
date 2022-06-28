@@ -25,8 +25,7 @@ img {
   align-items: center;
   background-color: #0282f9;
 }
-
-p {
+.upper-section .header-dsc {
   margin-right: 3rem;
   text-transform: uppercase;
   color: white;
@@ -190,6 +189,9 @@ p {
 
 .main-section {
   height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
 }
 .main-section .container {
@@ -238,6 +240,13 @@ p {
   justify-content: center;
   color: white;
   background-color: #55ba59;
+}
+.main-section #description {
+  color: black !important;
+}
+.main-section .ad {
+  color: darkgray;
+  text-align: end;
 }
 
 /* FOOTER */

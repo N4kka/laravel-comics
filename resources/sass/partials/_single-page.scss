@@ -23,6 +23,9 @@
 
 .main-section {
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
 
     .container {
@@ -78,5 +81,14 @@
         justify-content: center;
         color: white;
         background-color: #55ba59;
+    }
+    
+    #description {
+        color: black !important;
+    }
+
+    .ad {
+        color: darkgray;
+        text-align: end;
     }
 }

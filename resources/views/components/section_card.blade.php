@@ -3,7 +3,7 @@
     {{-- aggiungere padding --}}
     <img src=" {{ $image }} " alt="comic thumbnail">
     <p>
-        <a href="{{ route('comic_page', ['id' => $id]) }}">
+        <a href="{{ route('single_page', ['id' => $id]) }}">
             {{ $title }}
         </a>
     </p>

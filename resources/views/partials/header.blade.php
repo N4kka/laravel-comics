@@ -1,7 +1,7 @@
 <header>
     <div class="upper-section">
-        <p>dc power&#8480; visa&reg;</p>
-        <p>additional dc sites</p>
+        <p class="header-dsc">dc power&#8480; visa&reg;</p>
+        <p class="header-dsc">additional dc sites</p>
     </div>
     <div class="bottom-section">
         <div class="ms-container">
@@ -14,7 +14,7 @@
                         <a href="">character</a>
                     </li>
                     <li>
-                        <a href="{{ route('comic_page') }}">comics</a>
+                        <a href="{{ route('home_page') }}">comics</a>
                     </li>
                     <li>
                         <a href="">movies</a>

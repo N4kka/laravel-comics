@@ -5,15 +5,15 @@
 
     <section class="page">
         <div class="upper">
-            <img src="../images/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg" alt="">
+            <img src="{{ $comics['thumb'] }}" alt="">
         </div>
         <div class="main-section">
             <div class="container">
-                <h1>{{ $comic['title'] }}</h1>
+                <h1>{{ $comics['title'] }}</h1>
                 <div class="available">
                     <div class="price">
                         <div class="dolllars">
-                            <span>U.S. Price:</span> <span class="dollar-price">{{ $comic['price'] }}</span>
+                            <span>U.S. Price:</span> <span class="dollar-price">{{ $comics['price'] }}</span>
                         </div>
                         <div class="availability">
                             <h3>AVAILABLE</h3>
@@ -23,7 +23,11 @@
                         <h3>Check Availability &#9660;</h3>
                     </div>
                 </div>
-                <p>{!! $comic['description'] !!}</p>
+                <p id="description">{{ $comics['description'] }}</p>
+            </div>
+            <div class="ad">
+                <h4>ADVERTISEMENT</h4>
+                <img src="../images/adv.jpg" alt="">
             </div>
         </div>
     </section>
